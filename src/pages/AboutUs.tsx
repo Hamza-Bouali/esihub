@@ -5,7 +5,6 @@ import Footer from '../components/Footer';
 const AboutUs: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      <Navbar />
       <main className="container mx-auto px-4 py-5">
         <h2 className="text-center text-3xl font-bold">About Us</h2>
         <p className="text-center pb-4 border-b border-gray-700">Our mission and team.</p>
@@ -16,7 +15,6 @@ const AboutUs: React.FC = () => {
           </p>
         </div>
       </main>
-      <Footer />
     </div>
   );
 };

@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 const Home: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      <Navbar />
+      
       <div className="container mx-auto px-4 h-full">
         <a href="https://esihub.net/">
           <h2 className="text-center text-3xl font-bold">ESIHUB</h2>
@@ -55,7 +55,7 @@ const Home: React.FC = () => {
           </p>
         </footer>
       </div>
-      <Footer />
+      
     </div>
   );
 };

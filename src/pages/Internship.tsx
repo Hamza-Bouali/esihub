@@ -21,7 +21,6 @@ const Internship: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      <Navbar />
       <main className="container mx-auto px-4 py-5">
         <h2 className="text-center text-3xl font-bold">Internships</h2>
         <p className="text-center pb-4 border-b border-gray-700">Find internship opportunities.</p>
@@ -38,7 +37,6 @@ const Internship: React.FC = () => {
           ))}
         </div>
       </main>
-      <Footer />
     </div>
   );
 };

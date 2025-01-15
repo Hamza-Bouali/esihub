@@ -40,7 +40,6 @@ const Alumni: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      <Navbar />
       <main className="container mx-auto px-4 py-5">
         {/* Alumni Section */}
         <h2 className="text-center text-3xl font-bold">Alumni Network</h2>
@@ -73,7 +72,6 @@ const Alumni: React.FC = () => {
           ))}
         </div>
       </main>
-      <Footer />
     </div>
   );
 };
