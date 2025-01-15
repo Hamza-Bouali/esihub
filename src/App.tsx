@@ -7,6 +7,7 @@ import Events from './pages/Events';
 import Blog from './pages/Blog';
 import FAQ from './pages/FAQ';
 import Community from './pages/Community';
+import Docs from './pages/DOCESI';
 import Donation from './pages/Donation';
 import Alumni from './pages/Alumni';
 import Tools from './pages/Tools';
@@ -45,6 +46,7 @@ const App: React.FC = () => {
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/gamification" element={<Gamification />} />
           <Route path="/internship" element={<Internship />} />
+          <Route path='/docs' element={<Docs />} />
           <Route path="/contribute" element={<Contribute />} />
         </Routes>
       </main>
