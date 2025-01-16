@@ -3,10 +3,11 @@ import React from 'react';
 interface ToolCardProps {
   title: string;
   description: string;
+  icon: string;
   link: string;
 }
 
-const ToolCard: React.FC<ToolCardProps> = ({ title, description, link }) => {
+const ToolCard: React.FC<ToolCardProps> = ({ title, description, link ,icon}) => {
   return (
     <a
       href={link}

@@ -1,19 +1,21 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import ContributionForm from '../components/ContributionForm';
 
 const Contribute: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      <main className="container mx-auto px-4 py-5">
-        <h2 className="text-center text-3xl font-bold">Contribute</h2>
-        <p className="text-center pb-4 border-b border-gray-700">Help us improve ESIHUB.</p>
-
-        <div className="py-5">
-          <ContributionForm />
+      {/* Hero Section */}
+      <div className="bg-gradient-to-r from-blue-800 to-purple-900 py-20">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-5xl font-bold mb-4">Contribute</h1>
+          <p className="text-xl mb-8">Help us improve ESIHUB by sharing your resources and ideas.</p>
         </div>
-      </main>
+      </div>
+
+      {/* Contribution Form */}
+      <div className="container mx-auto px-4 py-12">
+        <ContributionForm />
+      </div>
     </div>
   );
 };

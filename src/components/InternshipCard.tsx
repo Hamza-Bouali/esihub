@@ -5,6 +5,7 @@ interface InternshipCardProps {
   company: string;
   location: string;
   link: string;
+  image: string;
 }
 
 const InternshipCard: React.FC<InternshipCardProps> = ({ title, company, location, link }) => {

@@ -29,7 +29,7 @@ const App: React.FC = () => {
 
       {/* Main content area */}
       <main className="flex-grow h-full bg-gray-900 text-white">
-        <Routes>
+        <Routes >
           <Route path="/" element={<Home />} />
           <Route path="/hall-of-fame" element={<HallOfFame />} />
           <Route path="/resources" element={<Resources />} />

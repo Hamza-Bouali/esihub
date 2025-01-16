@@ -5,6 +5,7 @@ interface AlumniCardProps {
   role: string;
   company: string;
   link: string;
+  image: string;
 }
 
 const AlumniCard: React.FC<AlumniCardProps> = ({ name, role, company, link }) => {

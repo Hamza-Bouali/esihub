@@ -1,6 +1,4 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import FAQItem from '../components/FAQItem';
 
 const FAQ: React.FC = () => {
@@ -17,20 +15,22 @@ const FAQ: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      <main className="container mx-auto px-4 py-5">
-        <h2 className="text-center text-3xl font-bold">FAQ</h2>
-        <p className="text-center pb-4 border-b border-gray-700">Frequently asked questions about ESIHUB.</p>
+      {/* Hero Section */}
+      <div className="bg-gradient-to-r from-blue-800 to-purple-900 py-20">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-5xl font-bold mb-4">FAQ</h1>
+          <p className="text-xl mb-8">Frequently asked questions about ESIHUB.</p>
+        </div>
+      </div>
 
-        <div className="space-y-4 py-5">
+      {/* FAQ Content */}
+      <div className="container mx-auto px-4 py-12">
+        <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <FAQItem
-              key={index}
-              question={faq.question}
-              answer={faq.answer}
-            />
+            <FAQItem key={index} question={faq.question} answer={faq.answer} />
           ))}
         </div>
-      </main>
+      </div>
     </div>
   );
 };
