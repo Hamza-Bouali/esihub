@@ -7,6 +7,7 @@ const Navbar: React.FC = () => {
   const menuItems = {
     main: [
       { to: '/', label: 'Home' },
+      { to: '/clubs', label: 'clubs and association' },
       { to: '/resources', label: 'Resources' },
       { to: '/events', label: 'Events' },
       { to: '/blog', label: 'Blog' },

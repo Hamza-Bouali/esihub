@@ -5,6 +5,7 @@ interface EventCardProps {
   date: string;
   description: string;
   link: string;
+  image : string;
 }
 
 const EventCard: React.FC<EventCardProps> = ({ title, date, description, link, image }) => {

@@ -13,6 +13,7 @@ import Alumni from './pages/Alumni';
 import Tools from './pages/Tools';
 import Feedback from './pages/Feedback';
 import AboutUs from './pages/AboutUs';
+import ClubsAndAssociations from './pages/clubs';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import Gamification from './pages/Gamification';
@@ -20,6 +21,7 @@ import Internship from './pages/Internship';
 import Contribute from './pages/Contribute';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ClubDetails from './pages/clubdetails';
 
 const App: React.FC = () => {
   return (
@@ -31,7 +33,9 @@ const App: React.FC = () => {
       <main className="flex-grow h-full bg-gray-900 text-white">
         <Routes >
           <Route path="/" element={<Home />} />
+          <Route path="/clubs/:clubName" element={<ClubDetails />} />
           <Route path="/hall-of-fame" element={<HallOfFame />} />
+          <Route path="/clubs" element={<ClubsAndAssociations />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/events" element={<Events />} />
           <Route path="/blog" element={<Blog />} />
@@ -52,7 +56,6 @@ const App: React.FC = () => {
       </main>
 
       {/* Footer at the bottom */}
-      <Footer />
     </Router>
   );
 };
