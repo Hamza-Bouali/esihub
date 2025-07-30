@@ -1,0 +1,43 @@
+# Prettier ignore file
+node_modules
+.next
+out
+dist
+build
+coverage
+.nyc_output
+
+# Logs
+*.log
+
+# Database
+*.db
+*.sqlite
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode
+.idea
+
+# Package files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Generated files
+public/sw.js
+public/workbox-*.js
+.next/
+out/
+
+# Config files that shouldn't be formatted
+*.config.js
+*.config.ts

@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://your-domain.com/sitemap.xml
+
+# Block admin and API routes
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /dashboard/admin/
+
+# Allow specific public API endpoints
+Allow: /api/health
+
+# Block sensitive files
+Disallow: /*.env*
+Disallow: /*.json$
+Disallow: /package*.json
+Disallow: /tsconfig*.json
+
+# Crawl delay (optional)
+Crawl-delay: 1
