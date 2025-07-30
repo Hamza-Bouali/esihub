@@ -80,7 +80,8 @@ const getReport = async (id: string) => {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const report = await getReport(params.id)
+  const { id } = await params
+  const report = await getReport(id)
   
   if (!report) {
     return {
@@ -101,7 +102,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function ReportPage({ params }: Props) {
-  const report = await getReport(params.id)
+  const { id } = await params
+  const report = await getReport(id)
 
   if (!report) {
     notFound()

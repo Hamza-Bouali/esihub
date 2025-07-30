@@ -2,18 +2,7 @@
 
 import React, { useState } from 'react'
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/co                <CardTitle className="text-white">Type de stage *</CardTitle>
-                    <select
-                      id="internshipType"
-                      value={formData.internshipType}
-                      onChange={(e) => handleInputChange('internshipType', e.target.value)}
-                      className="w-full px-3 py-2 rounded-md bg-white/10 border border-white/20 text-white"
-                      required
-                    >
-                      <option value="stage-technique">Stage Technique</option>
-                      <option value="stage-ouvrier">Stage Ouvrier</option>
-                      <option value="pfe">Projet de Fin d&apos;Études</option>
-                      <option value="stage-initiation">Stage d&apos;Initiation</option>card'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import {
@@ -200,8 +189,8 @@ export default function ReportUploadPage() {
                     >
                       <option value="stage-technique">Stage Technique</option>
                       <option value="stage-ouvrier">Stage Ouvrier</option>
-                      <option value="pfe">Projet de Fin d'Études</option>
-                      <option value="stage-initiation">Stage d'Initiation</option>
+                      <option value="pfe">Projet de Fin d&apos;Études</option>
+                      <option value="stage-initiation">Stage d&apos;Initiation</option>
                     </select>
                   </div>
                 </div>
@@ -272,9 +261,9 @@ export default function ReportUploadPage() {
                     >
                       <option value="">Sélectionner une filière</option>
                       <option value="IIR">IIR - Ingénierie Informatique et Réseaux</option>
-                      <option value="SSI">SSI - Sécurité des Systèmes d'Information</option>
-                      <option value="SID">SID - Systèmes d'Information et Données</option>
-                      <option value="ISIC">ISIC - Ingénierie des Systèmes d'Information et de Communication</option>
+                      <option value="SSI">SSI - Sécurité des Systèmes d&apos;Information</option>
+                      <option value="SID">SID - Systèmes d&apos;Information et Données</option>
+                      <option value="ISIC">ISIC - Ingénierie des Systèmes d&apos;Information et de Communication</option>
                     </select>
                   </div>
                   <div>
@@ -305,7 +294,7 @@ export default function ReportUploadPage() {
               <CardContent className="space-y-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <Label htmlFor="company" className="text-white">Nom de l'entreprise *</Label>
+                    <Label htmlFor="company" className="text-white">Nom de l&apos;entreprise *</Label>
                     <Input
                       id="company"
                       value={formData.company}
@@ -399,7 +388,6 @@ export default function ReportUploadPage() {
               </CardContent>
             </Card>
 
-            {/* Dynamic Arrays */}
             {/* Technologies */}
             <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
               <CardHeader>

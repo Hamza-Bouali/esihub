@@ -23,6 +23,7 @@ import {
 import Link from 'next/link'
 import { InternshipReport } from '@/types'
 import { formatDate } from '@/lib/utils'
+import ReportShareModal from './report-share-modal'
 
 // Mock data - replace with real API call
 const mockReports: InternshipReport[] = [
@@ -139,6 +140,7 @@ export default function InternshipReportsPage() {
   const [selectedType, setSelectedType] = useState('all')
   const [selectedYear, setSelectedYear] = useState('all')
   const [sortBy, setSortBy] = useState('recent')
+  const [isShareModalOpen, setIsShareModalOpen] = useState(false)
 
   const filteredReports = mockReports.filter(report => {
     const matchesSearch = report.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -220,7 +222,10 @@ export default function InternshipReportsPage() {
                 </div>
               </Link>
             </div>
-            <Button className="bg-blue-600 hover:bg-blue-700">
+            <Button 
+              className="bg-blue-600 hover:bg-blue-700"
+              onClick={() => setIsShareModalOpen(true)}
+            >
               <Upload className="h-4 w-4 mr-2" />
               Partager mon rapport
             </Button>
@@ -463,10 +468,31 @@ export default function InternshipReportsPage() {
           <div className="text-center py-12">
             <FileText className="h-16 w-16 text-gray-400 mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-white mb-2">Aucun rapport trouvé</h3>
-            <p className="text-blue-200">Essayez de modifier vos critères de recherche</p>
+            <p className="text-blue-200 mb-6">Essayez de modifier vos critères de recherche</p>
+            <Button 
+              className="bg-blue-600 hover:bg-blue-700"
+              onClick={() => setIsShareModalOpen(true)}
+            >
+              <Upload className="h-4 w-4 mr-2" />
+              Soyez le premier à partager
+            </Button>
           </div>
         )}
       </div>
+
+      {/* Floating Action Button for Mobile */}
+      <Button
+        className="fixed bottom-6 right-6 h-14 w-14 rounded-full bg-blue-600 hover:bg-blue-700 shadow-lg md:hidden z-40"
+        onClick={() => setIsShareModalOpen(true)}
+      >
+        <Upload className="h-6 w-6" />
+      </Button>
+
+      {/* Share Modal */}
+      <ReportShareModal 
+        isOpen={isShareModalOpen}
+        onClose={() => setIsShareModalOpen(false)}
+      />
     </div>
   )
 }

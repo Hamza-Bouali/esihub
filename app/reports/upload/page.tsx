@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import { generatePageMetadata } from '@/lib/seo'
-import ReportUploadPage from '@/components/internship-reports/report-upload-page'
+import { redirect } from 'next/navigation'
 
 export const metadata: Metadata = generatePageMetadata({
   title: 'Partager mon rapport',
@@ -9,5 +9,6 @@ export const metadata: Metadata = generatePageMetadata({
 })
 
 export default function UploadPage() {
-  return <ReportUploadPage />
+  // Redirect to main reports page since we now use modal
+  redirect('/reports')
 }
