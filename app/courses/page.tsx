@@ -18,8 +18,8 @@ export default function CoursesPage() {
   const filieres = [
     { value: "ICD", label: "ICD - Ingénierie des Connaissances et Données" },
     { value: "ICSD", label: "ICSD - Ingénierie des Connaissances et Systèmes Décisionnels" },
-    { value: "IIN", label: "IIN - Ingénierie de l'Information Numérique" },
-    { value: "ISITD", label: "ISITD - Ingénierie des Systèmes d'Information et Technologies Digitales" },
+    { value: "IIN", label: "IIN - Ingénierie de l&apos;Information Numérique" },
+    { value: "ISITD", label: "ISITD - Ingénierie des Systèmes d&apos;Information et Technologies Digitales" },
     { value: "ISSIC", label: "ISSIC - Ingénierie des Systèmes de Sécurité Informatique et Cybersécurité" },
     { value: "MsICS", label: "MsICS - Master en Ingénierie des Connaissances et Systèmes" },
   ]
@@ -75,7 +75,7 @@ export default function CoursesPage() {
       downloads: 298,
       rating: 4.7,
       date: "2025-01-22",
-      description: "Introduction aux algorithmes d'apprentissage automatique",
+      description: "Introduction aux algorithmes d&apos;apprentissage automatique",
     },
     {
       id: 5,

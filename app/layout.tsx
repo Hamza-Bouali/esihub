@@ -37,7 +37,7 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
   "name": "ESIHUB",
-  "description": "La plateforme étudiante officielle de l'École des Sciences de l'Information",
+  "description": "La plateforme étudiante officielle de l&apos;École des Sciences de l&apos;Information",
   "url": env.APP_URL,
   "logo": `${env.APP_URL}/logo.png`,
   "sameAs": [

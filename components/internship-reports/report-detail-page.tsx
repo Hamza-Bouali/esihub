@@ -21,7 +21,6 @@ import {
   Target,
   Code,
   TrendingUp,
-  ExternalLink,
 } from 'lucide-react'
 import Link from 'next/link'
 import { formatFileSize, formatDate } from '@/lib/utils'
@@ -395,7 +394,7 @@ export default function ReportDetailPage({ report }: ReportDetailPageProps) {
                 <div className="flex items-center justify-between text-blue-200">
                   <div className="flex items-center gap-2">
                     <Heart className="h-4 w-4" />
-                    <span>J'aime</span>
+                    <span>J&apos;aime</span>
                   </div>
                   <span className="font-medium">{report.likes}</span>
                 </div>
@@ -431,7 +430,7 @@ export default function ReportDetailPage({ report }: ReportDetailPageProps) {
                 </div>
                 {report.approvedAt && (
                   <div className="text-blue-200">
-                    <div className="font-medium mb-1">Date d'approbation</div>
+                    <div className="font-medium mb-1">Date d&apos;approbation</div>
                     <div className="text-sm">{formatDate(report.approvedAt)}</div>
                   </div>
                 )}

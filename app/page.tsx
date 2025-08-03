@@ -8,7 +8,7 @@ export default function HomePage() {
   const announcements = [
     {
       id: 1,
-      title: "Nouvelle date d'examen annoncée",
+      title: "Nouvelle date d&apos;examen annoncée",
       content: "Les examens du semestre S5 sont reportés au 15 février 2025",
       date: "2025-01-28",
       urgent: true,
@@ -113,7 +113,7 @@ export default function HomePage() {
                 </Button>
               </Link>
               <Link href="/register">
-                <Button className="bg-blue-600 hover:bg-blue-700">S'inscrire</Button>
+                <Button className="bg-blue-600 hover:bg-blue-700">S&apos;inscrire</Button>
               </Link>
             </div>
           </div>
@@ -125,7 +125,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-5xl font-bold text-white mb-6">
-              La plateforme étudiante de l'
+              La plateforme étudiante de l&apos;
               <span className="text-blue-400">ESI</span>
             </h2>
             <p className="text-xl text-blue-100 mb-8 leading-relaxed">
@@ -268,7 +268,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 text-center">
           <h3 className="text-4xl font-bold text-white mb-6">Prêt à commencer ?</h3>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Rejoignez des milliers d'étudiants qui utilisent déjà ESIHUB pour optimiser leur parcours académique
+            Rejoignez des milliers d&apos;étudiants qui utilisent déjà ESIHUB pour optimiser leur parcours académique
           </p>
           <Link href="/login">
             <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50 text-lg px-8 py-3">
@@ -288,7 +288,7 @@ export default function HomePage() {
                 <span className="text-xl font-bold text-white">ESIHUB</span>
               </div>
               <p className="text-blue-200">
-                La plateforme étudiante officielle de l'École des Sciences de l'Information
+                La plateforme étudiante officielle de l&apos;École des Sciences de l&apos;Information
               </p>
             </div>
             <div>
@@ -321,7 +321,7 @@ export default function HomePage() {
               <ul className="space-y-2 text-blue-200">
                 <li>
                   <Link href="/help" className="hover:text-white">
-                    Centre d'aide
+                    Centre d&apos;aide
                   </Link>
                 </li>
                 <li>

@@ -238,7 +238,7 @@ export default function InternshipReportsPage() {
         <div className="text-center mb-8">
           <h2 className="text-4xl font-bold text-white mb-4">Rapports de Stage & PFE</h2>
           <p className="text-xl text-blue-200 max-w-3xl mx-auto">
-            Découvrez les travaux des lauréats ESI et trouvez l'inspiration pour votre propre stage ou projet de fin d'études
+            Découvrez les travaux des lauréats ESI et trouvez l&apos;inspiration pour votre propre stage ou projet de fin d&apos;études
           </p>
         </div>
 
@@ -276,7 +276,7 @@ export default function InternshipReportsPage() {
               <option value="pfe">PFE</option>
               <option value="stage-technique">Stage Technique</option>
               <option value="stage-ouvrier">Stage Ouvrier</option>
-              <option value="stage-initiation">Stage d'Initiation</option>
+              <option value="stage-initiation">Stage d&apos;Initiation</option>
             </select>
             <select
               value={selectedYear}

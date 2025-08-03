@@ -190,7 +190,7 @@ export default function DashboardPage() {
         <Tabs defaultValue="overview" className="space-y-6">
           <TabsList className="bg-white/10 border-white/20">
             <TabsTrigger value="overview" className="data-[state=active]:bg-blue-600">
-              Vue d'ensemble
+              Vue d&apos;ensemble
             </TabsTrigger>
             <TabsTrigger value="grades" className="data-[state=active]:bg-blue-600">
               Notes

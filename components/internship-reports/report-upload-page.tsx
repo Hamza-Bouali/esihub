@@ -173,7 +173,7 @@ export default function ReportUploadPage() {
                       id="title"
                       value={formData.title}
                       onChange={(e) => handleInputChange('title', e.target.value)}
-                      placeholder="Ex: Développement d'une application mobile..."
+                      placeholder="Ex: Développement d&apos;une application mobile..."
                       className="bg-white/10 border-white/20 text-white placeholder:text-gray-300"
                       required
                     />

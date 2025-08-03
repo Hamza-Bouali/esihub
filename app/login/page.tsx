@@ -32,7 +32,7 @@ export default function LoginPage() {
 
       // Simulate successful login
       window.location.href = "/dashboard"
-    } catch (err) {
+    } catch {
       setError("Erreur lors de la connexion avec Microsoft")
     } finally {
       setLoading(false)
@@ -55,7 +55,7 @@ export default function LoginPage() {
       // Simulate login process
       await new Promise((resolve) => setTimeout(resolve, 1500))
       window.location.href = "/dashboard"
-    } catch (err) {
+    } catch {
       setError("Email ou mot de passe incorrect")
     } finally {
       setLoading(false)
@@ -170,14 +170,14 @@ export default function LoginPage() {
               <Link href="/forgot-password" className="text-blue-300 hover:text-white text-sm">
                 Mot de passe oublié ?
               </Link>
-              <div className="text-blue-200 text-sm">Pas encore de compte ? Contactez l'administration</div>
+              <div className="text-blue-200 text-sm">Pas encore de compte ? Contactez l&apos;administration</div>
             </div>
           </CardContent>
         </Card>
 
         <div className="text-center mt-6">
           <Link href="/" className="text-blue-300 hover:text-white">
-            ← Retour à l'accueil
+            ← Retour à l&apos;accueil
           </Link>
         </div>
       </div>

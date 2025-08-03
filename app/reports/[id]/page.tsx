@@ -24,7 +24,7 @@ const getReport = async (id: string) => {
       companyLocation: 'Casablanca',
       supervisor: 'Mme. Fatima Zahra',
       duration: '4 mois',
-      internshipType: 'pfe',
+      internshipType: 'pfe' as const,
       reportFile: {
         fileName: 'rapport_pfe_ahmed_benali.pdf',
         fileUrl: '/reports/rapport_pfe_ahmed_benali.pdf',
@@ -45,7 +45,7 @@ const getReport = async (id: string) => {
       submittedAt: new Date('2024-06-15'),
       approvedAt: new Date('2024-06-20'),
       approvedBy: 'Prof. Mohammed Alami',
-      status: 'approved',
+      status: 'approved' as const,
       createdAt: new Date('2024-06-15'),
       updatedAt: new Date('2024-06-20'),
       abstract: 'Ce projet de fin d\'études vise à développer une solution complète de gestion de stock pour les entreprises marocaines. L\'application mobile développée avec React Native offre une interface intuitive permettant aux gestionnaires de suivre leurs inventaires en temps réel, de générer des rapports détaillés et de recevoir des notifications automatiques lorsque les stocks atteignent des seuils critiques.',

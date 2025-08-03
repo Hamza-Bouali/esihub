@@ -76,15 +76,15 @@ function DefaultErrorFallback({ error, retry }: { error: Error; retry: () => voi
           <div className="mx-auto mb-4 w-16 h-16 bg-red-500/20 rounded-full flex items-center justify-center">
             <AlertTriangle className="h-8 w-8 text-red-400" />
           </div>
-          <CardTitle className="text-white text-xl">Oups ! Une erreur s'est produite</CardTitle>
+          <CardTitle className="text-white text-xl">Oups ! Une erreur s&apos;est produite</CardTitle>
           <CardDescription className="text-blue-200">
-            Nous nous excusons pour la gêne occasionnée. L'équipe technique a été notifiée.
+            Nous nous excusons pour la gêne occasionnée. L&apos;équipe technique a été notifiée.
           </CardDescription>
         </CardHeader>
         <CardContent className="text-center space-y-4">
           {process.env.NODE_ENV === 'development' && (
             <details className="text-left text-sm text-red-300 bg-red-900/20 p-3 rounded-md">
-              <summary className="cursor-pointer mb-2 font-medium">Détails de l'erreur</summary>
+              <summary className="cursor-pointer mb-2 font-medium">Détails de l&apos;erreur</summary>
               <pre className="whitespace-pre-wrap break-words text-xs">
                 {error.name}: {error.message}
                 {error.stack && `\n${error.stack}`}

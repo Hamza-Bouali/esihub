@@ -39,7 +39,7 @@ import {
 import Link from "next/link"
 
 export default function GradesPage() {
-  const [selectedSemester, setSelectedSemester] = useState("all")
+  // const [selectedSemester, setSelectedSemester] = useState("all")
   const [selectedYear, setSelectedYear] = useState("2024-2025")
 
   // Sample data - in real app this would come from API
@@ -69,7 +69,7 @@ export default function GradesPage() {
       average: 15.8,
       modules: [
         { name: "Programmation Orientée Objet", grade: 17.0, coefficient: 3, credits: 6 },
-        { name: "Systèmes d'Exploitation", grade: 15.5, coefficient: 3, credits: 6 },
+        { name: "Systèmes d&apos;Exploitation", grade: 15.5, coefficient: 3, credits: 6 },
         { name: "Génie Logiciel", grade: 16.0, coefficient: 2, credits: 4 },
         { name: "Économie", grade: 14.5, coefficient: 1, credits: 2 },
       ],
@@ -130,7 +130,7 @@ export default function GradesPage() {
 
   const currentAverage = semesterData.reduce((sum, sem) => sum + sem.average, 0) / semesterData.length
   const bestSemester = semesterData.reduce((best, current) => (current.average > best.average ? current : best))
-  const improvementTrend = semesterData[semesterData.length - 1].average - semesterData[0].average
+  const improvementTrend = semesterData.length > 0 ? (semesterData[semesterData.length - 1]?.average ?? 0) - (semesterData[0]?.average ?? 0) : 0
 
   const getGradeColor = (grade: number) => {
     if (grade >= 16) return "text-green-400"
@@ -401,7 +401,7 @@ export default function GradesPage() {
                         })
                       }
                       return acc
-                    }, [] as any[])
+                    }, [] as { module: string; grades: { grade: number; semester: string }[]; average: number; coefficient: number }[])
                     .sort((a, b) => b.average - a.average)
                     .map((module, index) => (
                       <div key={index} className="p-4 bg-white/5 rounded-lg">
@@ -420,7 +420,7 @@ export default function GradesPage() {
                           </div>
                         </div>
                         <div className="flex space-x-2">
-                          {module.grades.map((grade: any, gradeIndex: number) => (
+                          {module.grades.map((grade: { grade: number; semester: string }, gradeIndex: number) => (
                             <Badge key={gradeIndex} variant="secondary" className="text-xs">
                               {grade.semester}: {grade.grade}
                             </Badge>
@@ -438,7 +438,7 @@ export default function GradesPage() {
               <CardHeader>
                 <CardTitle className="text-white">Analyse des Compétences</CardTitle>
                 <CardDescription className="text-blue-200">
-                  Évaluation de vos forces et axes d'amélioration
+                  Évaluation de vos forces et axes d&apos;amélioration
                 </CardDescription>
               </CardHeader>
               <CardContent>
